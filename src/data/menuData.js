@@ -92,21 +92,25 @@ export const sandwiches = [
   }
 ];
 
-export const bagels = [
-  { name: 'Plain', note: 'Everyday' },
-  { name: 'Everything', note: 'Everyday' },
-  { name: 'Sesame', note: 'Black & white seeds' },
-  { name: 'Sea Salt', note: 'Flaky Maldon' },
-  { name: 'Whole Wheat', note: 'Hearty grain' },
-  { name: 'Whole Wheat Everything', note: 'Full flavor' },
-  { name: 'Garlic & Onion', note: 'Savory classic' },
-  { name: 'Asiago Cheese', note: 'Crisped crust' },
-  { name: 'Cajun Spice', note: 'Southern kick' },
-  { name: 'Za’atar', note: 'Middle-Eastern blend' },
-  { name: 'Rosemary Sea Salt', note: 'Fri – Sun only' },
-  { name: 'Poppy Seed', note: 'Sat – Sun only' },
-  { name: 'Gluten Free Bagel', note: '+$1.50 add-on' }
-];
+export const bagels = {
+  daily: [
+    { name: 'Plain', note: 'Classic everyday staple', badge: 'Daily' },
+    { name: 'Everything', note: 'Sesame, poppy, garlic, onion & salt', badge: 'Popular' },
+    { name: 'Sesame', note: 'Black & white toasted sesame seeds', badge: 'Daily' },
+    { name: 'Sea Salt', note: 'Flaky sea salt crystals', badge: 'Daily' },
+    { name: 'Whole Wheat', note: 'Hearty malted wheat grain', badge: 'Daily' },
+    { name: 'Whole Wheat Everything', note: 'Full everything crunch on wheat dough', badge: 'Daily' },
+    { name: 'Garlic & Onion', note: 'Savory roasted allium blend', badge: 'Daily' }
+  ],
+  specialty: [
+    { name: 'Asiago Cheese', note: 'Golden crisped cheese crust', badge: 'Specialty' },
+    { name: 'Cajun Spice', note: 'House zesty Southern spice rub', badge: 'Specialty' },
+    { name: 'Za’atar', note: 'Middle-Eastern wild thyme, sumac & sesame', badge: 'Specialty' },
+    { name: 'Rosemary Sea Salt', note: 'Available Fri – Sun only', badge: 'Fri – Sun' },
+    { name: 'Poppy Seed', note: 'Available Sat – Sun only', badge: 'Sat – Sun' },
+    { name: 'Gluten-Free Bagel', note: '+$1.50 substitution', badge: 'Gluten-Free' }
+  ]
+};
 
 export const spreads = {
   priceNote: 'Any bagel with spread: $4.95',

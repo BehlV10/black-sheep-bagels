@@ -135,48 +135,65 @@ export default function MenuSection() {
 
         {/* 2. Bagels Tab */}
         {activeTab === 'bagels' && (
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl p-6 sm:p-8 border border-[#e5d8c3] shadow-sm">
-            <div className="text-center mb-8">
-              <h3 className="font-serif text-2xl font-bold text-sheep-dark mb-2">
-                Hand-Rolled Bagel Varieties
-              </h3>
-              <p className="text-sm text-[#6c5b4b]">
-                Kettled and hearth-baked for the quintessential chewy interior and blistered golden crust.
-              </p>
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div className="text-center mb-2">
+              <span className="inline-block px-3 py-1 rounded-full bg-sheep-dark text-sheep-cream text-xs font-semibold">
+                Boiled & Hearth-Baked Daily
+              </span>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
-              {bagels.map((bagel) => (
-                <div 
-                  key={bagel.name}
-                  className="p-4 rounded-xl bg-[#faf6ef] border border-[#e8dac7] text-left hover:bg-[#f5ecdd] hover:border-[#cfbc9f] transition-all flex flex-col justify-between group"
-                >
-                  <div>
-                    <div className="flex items-center justify-between gap-1 mb-1.5">
-                      <span className="w-2 h-2 rounded-full bg-sheep-gold/80 group-hover:bg-sheep-gold" />
-                      {bagel.note.includes('only') ? (
-                        <span className="text-[10px] font-semibold text-amber-800 bg-amber-100/80 px-1.5 py-0.5 rounded">
-                          Special
-                        </span>
-                      ) : (
-                        <span className="text-[10px] text-stone-400 font-medium">
-                          Bake
-                        </span>
-                      )}
-                    </div>
-                    <h4 className="font-serif text-base font-bold text-sheep-dark group-hover:text-[#88541e] transition-colors">
-                      {bagel.name}
-                    </h4>
-                  </div>
-                  <p className="text-xs text-[#7e6955] mt-2 pt-2 border-t border-[#ede2d2]">
-                    {bagel.note}
-                  </p>
-                </div>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Daily Classics */}
+              <div className="bg-white rounded-2xl p-6 border border-[#e5d8c3] shadow-sm">
+                <h3 className="font-serif text-xl font-bold text-sheep-dark mb-4 pb-2 border-b border-stone-100 flex items-center justify-between">
+                  <span>Everyday Classics</span>
+                  <span className="text-xs font-sans text-stone-500 font-normal">Baked daily</span>
+                </h3>
+                <ul className="space-y-3">
+                  {bagels.daily.map(item => (
+                    <li key={item.name} className="flex items-start justify-between text-sm py-1.5 border-b border-stone-50 gap-2">
+                      <div>
+                        <span className="font-medium text-[#44382d] block">{item.name}</span>
+                        <span className="text-xs text-[#826f5d]">{item.note}</span>
+                      </div>
+                      <span className="text-[11px] font-medium px-2 py-0.5 rounded bg-stone-100 text-[#675443] whitespace-nowrap">
+                        {item.badge}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Specialty & Weekend Bakes */}
+              <div className="bg-white rounded-2xl p-6 border border-[#e5d8c3] shadow-sm">
+                <h3 className="font-serif text-xl font-bold text-sheep-dark mb-4 pb-2 border-b border-stone-100 flex items-center justify-between">
+                  <span>Specialty & Weekend Bakes</span>
+                  <span className="text-xs font-sans text-stone-500 font-normal">Rotating batches</span>
+                </h3>
+                <ul className="space-y-3">
+                  {bagels.specialty.map(item => (
+                    <li key={item.name} className="flex items-start justify-between text-sm py-1.5 border-b border-stone-50 gap-2">
+                      <div>
+                        <span className="font-medium text-[#44382d] block">{item.name}</span>
+                        <span className="text-xs text-[#826f5d]">{item.note}</span>
+                      </div>
+                      <span className={`text-[11px] font-medium px-2 py-0.5 rounded whitespace-nowrap ${
+                        item.badge.includes('Sun') 
+                          ? 'bg-amber-100 text-amber-900 font-semibold' 
+                          : item.badge === 'Gluten-Free'
+                          ? 'bg-emerald-100 text-emerald-800'
+                          : 'bg-stone-100 text-[#675443]'
+                      }`}>
+                        {item.badge}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-[#ebdfce] text-center text-xs text-[#7c6957]">
-              All bagels are vegan except Asiago Cheese. Gluten-free bagel option available (+$1.50).
+            <div className="p-4 rounded-xl bg-white/70 border border-[#e5d8c3] text-center text-xs text-[#7c6957]">
+              All bagels are vegan except Asiago Cheese. Toasting & custom slicing available upon request at the counter.
             </div>
           </div>
         )}
