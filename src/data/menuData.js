@@ -203,33 +203,33 @@ export const events = [
 
 export const instagramPosts = [
   {
-    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990394410-ZVEVCGYZ89LJLG5TF01D/48787299966_f23d0587b3_o.jpg',
-    caption: 'Golden sesame and everything bagels straight from the oven.',
-    link: 'https://www.instagram.com/blacksheepbagelcafe/'
-  },
-  {
-    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990396542-HWPH9BC7SMVXPH39CA0R/48786940328_46259094f4_o.jpg',
-    caption: 'Fresh lox with capers, red onion, and dill cream cheese.',
-    link: 'https://www.instagram.com/blacksheepbagelcafe/'
-  },
-  {
-    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990468100-YZ9R26800MP0PZM2HRVW/48786931568_fb2137fe71_o.jpg',
-    caption: 'The favorite sandwich on a toasted asiago bagel.',
+    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1586712895862-SF4H7VGEJMYHZL63Z1OX/IMG_4625.jpg',
+    caption: 'Lox bagels, avocado toast, and specialty espresso spread.',
     link: 'https://www.instagram.com/blacksheepbagelcafe/'
   },
   {
     url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990486135-08LNKJCPF5V9W13EEK3X/IMG_20190819_104153_718.jpg',
-    caption: 'Cozy mornings in Harvard Square with fresh espresso.',
+    caption: 'Morning espresso and counter smiles in Harvard Square.',
     link: 'https://www.instagram.com/blacksheepbagelcafe/'
   },
   {
-    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990506995-HYTSDJQP02TM0TEZN79W/48786930178_e9d243217e_o.jpg',
-    caption: 'Avocado toast topped with Aleppo pepper and microgreens.',
+    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1613866985192-LCV4O6D74Z2QZNYU2LVK/black%2Bsheep%2Bmarket',
+    caption: 'Provisions, artisan bakery loaves, and natural wines at Black Sheep Market.',
     link: 'https://www.instagram.com/blacksheepbagelcafe/'
   },
   {
-    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1586712895862-SF4H7VGEJMYHZL63Z1OX/IMG_4625.jpg',
-    caption: 'Fresh morning bake cooling on the baker racks.',
+    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990394410-ZVEVCGYZ89LJLG5TF01D/48787299966_f23d0587b3_o.jpg',
+    caption: 'Live acoustic music sessions at Black Sheep Cafe.',
+    link: 'https://www.instagram.com/blacksheepbagelcafe/'
+  },
+  {
+    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990487200-2XT34WEGJ3LNVGGUDTN3/IMG_20190619_100229_258.jpg',
+    caption: 'Community yoga mornings in the cafe before hours.',
+    link: 'https://www.instagram.com/blacksheepbagelcafe/'
+  },
+  {
+    url: 'https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990468100-YZ9R26800MP0PZM2HRVW/48786931568_fb2137fe71_o.jpg',
+    caption: 'Evening community gatherings and tastings in Cambridge.',
     link: 'https://www.instagram.com/blacksheepbagelcafe/'
   }
 ];

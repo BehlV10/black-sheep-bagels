@@ -64,28 +64,28 @@ export default function Hero() {
           {/* Right Column: Hero Visual Showcase */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Primary Card */}
+              {/* Primary Card: Actual Bagel Spread */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-stone-200">
                 <img
-                  src="https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990396542-HWPH9BC7SMVXPH39CA0R/48786940328_46259094f4_o.jpg"
-                  alt="Signature Lox Bagel Sandwich at Black Sheep Bagel Cafe"
-                  className="w-full h-full object-cover transform hover:scale-105 transition-duration duration-500"
+                  src="https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1586712895862-SF4H7VGEJMYHZL63Z1OX/IMG_4625.jpg"
+                  alt="Black Sheep Bagel Cafe table spread with Lox bagels, avocado toast, and specialty espresso"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-all duration-500"
                   loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-5">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-5">
                   <div className="text-white">
-                    <span className="text-xs uppercase tracking-wider font-semibold text-amber-200">House Signature</span>
-                    <h3 className="font-serif text-xl font-bold">The Lox 2.0 Sandwich</h3>
-                    <p className="text-xs text-stone-200">Fresh dill, scallion cream cheese, capers & microgreens</p>
+                    <span className="text-xs uppercase tracking-wider font-semibold text-amber-200">Fresh Daily Spread</span>
+                    <h3 className="font-serif text-xl font-bold">Lox Classics, Avocado Toasts & Lattes</h3>
+                    <p className="text-xs text-stone-200">Scratch-whipped cream cheeses & specialty brews</p>
                   </div>
                 </div>
               </div>
 
-              {/* Floating Floating secondary photo */}
+              {/* Floating secondary photo: Friendly Counter & Espresso */}
               <div className="hidden sm:block absolute -bottom-8 -left-8 w-44 rounded-xl overflow-hidden shadow-lg border-4 border-white aspect-square bg-stone-100">
                 <img
-                  src="https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990394410-ZVEVCGYZ89LJLG5TF01D/48787299966_f23d0587b3_o.jpg"
-                  alt="Freshly baked artisan bagels"
+                  src="https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990486135-08LNKJCPF5V9W13EEK3X/IMG_20190819_104153_718.jpg"
+                  alt="Barista serving fresh espresso at the Harvard Square counter"
                   className="w-full h-full object-cover"
                 />
               </div>
