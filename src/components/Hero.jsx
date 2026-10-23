@@ -64,30 +64,27 @@ export default function Hero() {
           {/* Right Column: Hero Visual Showcase */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              {/* Primary Card: Actual Bagel Spread */}
-              <div className="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-stone-200">
+              {/* Primary Card: Unobstructed Bagel Spread */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-stone-200">
                 <img
                   src="https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1586712895862-SF4H7VGEJMYHZL63Z1OX/IMG_4625.jpg"
                   alt="Black Sheep Bagel Cafe table spread with Lox bagels, avocado toast, and specialty espresso"
                   className="w-full h-full object-cover transform hover:scale-105 transition-all duration-500"
                   loading="eager"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-5">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex items-end p-6">
                   <div className="text-white">
-                    <span className="text-xs uppercase tracking-wider font-semibold text-amber-200">Fresh Daily Spread</span>
-                    <h3 className="font-serif text-xl font-bold">Lox Classics, Avocado Toasts & Lattes</h3>
-                    <p className="text-xs text-stone-200">Scratch-whipped cream cheeses & specialty brews</p>
+                    <span className="text-xs uppercase tracking-wider font-semibold text-amber-200 block mb-1">
+                      Fresh Daily Spread
+                    </span>
+                    <h3 className="font-serif text-xl sm:text-2xl font-bold leading-tight">
+                      Lox Classics, Avocado Toasts & Specialty Lattes
+                    </h3>
+                    <p className="text-xs sm:text-sm text-stone-200 mt-1">
+                      Kettled & baked daily with scratch-whipped cream cheeses
+                    </p>
                   </div>
                 </div>
-              </div>
-
-              {/* Floating secondary photo: Friendly Counter & Espresso */}
-              <div className="hidden sm:block absolute -bottom-8 -left-8 w-44 rounded-xl overflow-hidden shadow-lg border-4 border-white aspect-square bg-stone-100">
-                <img
-                  src="https://images.squarespace-cdn.com/content/v1/5a891244d7bdce4550a72efa/1570990486135-08LNKJCPF5V9W13EEK3X/IMG_20190819_104153_718.jpg"
-                  alt="Barista serving fresh espresso at the Harvard Square counter"
-                  className="w-full h-full object-cover"
-                />
               </div>
 
               {/* Floating Badge */}
