@@ -4,7 +4,6 @@ import NoticeBanner from './components/NoticeBanner';
 import Hero from './components/Hero';
 import MenuSection from './components/MenuSection';
 import LocationsSection from './components/LocationsSection';
-import MarketOutpost from './components/MarketOutpost';
 import EventsSection from './components/EventsSection';
 import InstagramGallery from './components/InstagramGallery';
 import Footer from './components/Footer';
@@ -22,7 +21,6 @@ export default function App() {
         <Hero />
         <MenuSection />
         <LocationsSection />
-        <MarketOutpost />
         <EventsSection />
         <InstagramGallery />
       </main>

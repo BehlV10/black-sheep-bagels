@@ -63,8 +63,7 @@ export default function Footer({ onOpenContact }) {
             <ul className="space-y-2 text-stone-400">
               <li><a href="#menu" className="hover:text-white transition-colors">Sandwiches & Bagels</a></li>
               <li><a href="#locations" className="hover:text-white transition-colors">Locations & Directions</a></li>
-              <li><a href="#market" className="hover:text-white transition-colors">Market Outpost & Wine</a></li>
-              <li><a href="#events" className="hover:text-white transition-colors">Upcoming Tastings</a></li>
+              <li><a href="#events" className="hover:text-white transition-colors">Upcoming Tastings & Events</a></li>
               <li>
                 <button onClick={onOpenContact} className="text-amber-300 hover:underline">
                   Inquiries: shoshanah@blacksheepbagels.com

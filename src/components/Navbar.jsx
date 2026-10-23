@@ -16,9 +16,8 @@ export default function Navbar({ onOpenContact }) {
   const navLinks = [
     { name: 'Menu', href: '#menu' },
     { name: 'Locations & Hours', href: '#locations' },
-    { name: 'Market Outpost', href: '#market' },
-    { name: 'Events', href: '#events' },
-    { name: 'Instagram', href: '#community' },
+    { name: 'Events & Tastings', href: '#events' },
+    { name: 'Community', href: '#community' },
   ];
 
   return (
