@@ -145,15 +145,32 @@ export default function MenuSection() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
               {bagels.map((bagel) => (
                 <div 
                   key={bagel.name}
-                  className="p-4 rounded-xl bg-[#faf6ef] border border-[#e8dac7] text-center hover:bg-[#f5ecdd] transition-colors"
+                  className="p-4 rounded-xl bg-[#faf6ef] border border-[#e8dac7] text-left hover:bg-[#f5ecdd] hover:border-[#cfbc9f] transition-all flex flex-col justify-between group"
                 >
-                  <div className="text-2xl mb-1">🥯</div>
-                  <h4 className="font-serif text-base font-bold text-sheep-dark">{bagel.name}</h4>
-                  <p className="text-xs text-[#7e6955] mt-0.5">{bagel.note}</p>
+                  <div>
+                    <div className="flex items-center justify-between gap-1 mb-1.5">
+                      <span className="w-2 h-2 rounded-full bg-sheep-gold/80 group-hover:bg-sheep-gold" />
+                      {bagel.note.includes('only') ? (
+                        <span className="text-[10px] font-semibold text-amber-800 bg-amber-100/80 px-1.5 py-0.5 rounded">
+                          Special
+                        </span>
+                      ) : (
+                        <span className="text-[10px] text-stone-400 font-medium">
+                          Bake
+                        </span>
+                      )}
+                    </div>
+                    <h4 className="font-serif text-base font-bold text-sheep-dark group-hover:text-[#88541e] transition-colors">
+                      {bagel.name}
+                    </h4>
+                  </div>
+                  <p className="text-xs text-[#7e6955] mt-2 pt-2 border-t border-[#ede2d2]">
+                    {bagel.note}
+                  </p>
                 </div>
               ))}
             </div>
